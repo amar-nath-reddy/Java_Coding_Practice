@@ -8,6 +8,11 @@ public class Tables {
         for(int i = 0 ; i <= 10 ; i++){
             System.out.println("2"+" " +"*" +" "+i + "=" +" "+2*i );
         }
+        System.out.println(" ");
+        System.out.println("Its 12 Table:");
+        System.out.println("============");
+        for(int i = 0 ; i <= 10 ; i++){
+            System.out.println("12"+" " +"*" +" "+i + "=" +" "+12*i );
+        }
     }
-
 }
