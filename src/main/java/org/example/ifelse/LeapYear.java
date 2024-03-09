@@ -4,6 +4,7 @@ package org.example.ifelse;
     public class LeapYear {
         public static void main(String[] args) {
             isLeapYear(2024);
+            System.out.println(".... ");
         }
         public static boolean isLeapYear(int year){
             if (year<1 || year>9999){
