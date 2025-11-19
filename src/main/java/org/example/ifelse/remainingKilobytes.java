@@ -3,7 +3,7 @@ package org.example.ifelse;
 public class remainingKilobytes {
 
     public static void main(String[] args) {
-        printMegaBytesAndKiloBytes(2500);
+        printMegaBytesAndKiloBytes(59481);
     }
     public static void  printMegaBytesAndKiloBytes ( int kiloBytes){
         if (kiloBytes < 0 ){
