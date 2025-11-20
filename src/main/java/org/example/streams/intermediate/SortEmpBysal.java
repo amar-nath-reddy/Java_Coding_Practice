@@ -35,8 +35,19 @@ public class SortEmpBysal {
         System.out.println("avgsalbydep::"+avgsalbydep);
 
 
+        //Here we are getting the Max / min avg sal in the Deptment
+        Map.Entry<String, Double> collect = employees.stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment,
+                                               Collectors.averagingDouble(Employee::getSalary)))
+                .entrySet().stream()
+                .min(Map.Entry.comparingByValue()).orElseThrow();
+        System.out.println(collect);
 
 
+        Map<Integer, List<Employee>> collect1 = employees.stream()
+                .collect(Collectors.groupingBy(Employee::getId));
+        System.out.println(collect1);
+        System.out.println(collect1.size());
 
     }
 }
