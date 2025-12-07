@@ -41,7 +41,9 @@ public class Staticdatastorage {
 
   UserDetails userDetails = new UserDetails(1,"Kavin","kavi12@service.com",servicesesList,productsList);
     UserDetails userDetails2 = new UserDetails(2,"Harry","Harry@service.com",servicesesList,productsList);
-  List<UserDetails> userDetailsList = List.of(userDetails,userDetails2);
+    UserDetails userDetails3 = new UserDetails(3,"Ben","Ben@service.com",servicesesList,productsList);
+    UserDetails userDetails4 = new UserDetails(4,"Buntty","Buntty@service.com",servicesesList,productsList);
+  List<UserDetails> userDetailsList = List.of(userDetails,userDetails2,userDetails3,userDetails4);
 
     public List<UserDetails> getUserDetailsList() {
         return userDetailsList;
