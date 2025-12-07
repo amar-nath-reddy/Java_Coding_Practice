@@ -49,5 +49,9 @@ public class SortEmpBysal {
         System.out.println(collect1);
         System.out.println(collect1.size());
 
+        Map<Boolean, List<Employee>> collect2 = employees.stream()
+                .collect(Collectors.partitioningBy(c -> c.getSalary() > 60000));
+        System.out.println("True sal avove > 60000"+collect2.get(true));
+        System.out.println("fal  sal avove < 60000"+collect2.get(false));
     }
 }
